@@ -28,7 +28,7 @@ def gen_vectors_and_y(seed, vectors_len, count):
 
 
 def find_w(vectors_len, count):
-    # создание альфы - длинны вектора-производной, деление на count - для усреднения функции ошибки бля разного кол ва точек
+    # создание альфы - длинны вектора-производной, деление на count - для усреднения функции ошибки для разного кол ва точек
     al = Vector([[00.1 / count]])  # менять 0.1 и/или убрать добавить деление на count
     ans = gen_vectors_and_y(1, vectors_len, count)
     w_true = ans[2]
